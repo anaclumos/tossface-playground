@@ -3,13 +3,13 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className='bg-white rounded-lg md:flex md:items-center md:justify-between dark:bg-slate-800'>
+    <footer className='py-12 bg-white rounded-lg md:flex md:items-center md:justify-between dark:bg-slate-800'>
       <span className='text-sm text-gray-500 sm:text-center dark:text-gray-400'>
         © 2022{' '}
         <a href='https://cho.sh/' className='hover:underline'>
           Sunghyun Cho.
         </a>{' '}
-        <a href='https://github.com/tossface-playground' className='hover:underline'>
+        <a href='https://github.com/anaclumos/tossface-playground' className='hover:underline'>
           This project is open-sourced on GitHub.
         </a>
       </span>

@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import EmojiListItem from '../components/EmojiListItem'
 import Footer from '../components/Footer'
 
 const index = () => (
@@ -10,15 +11,16 @@ const index = () => (
     </Head>
 
     <h1 className='text-2xl font-semibold text-slate-900 dark:text-white'>TossFace Emoji Playground!</h1>
-    <p className='text-base font-medium tracking-tight text-slate-900 dark:text-white'>
-      The Zero Gravity Pen can be used to write in any orientation, including upside-down. It even works in outer space.
+    <p className='py-6 text-base font-medium tracking-tight text-slate-900 dark:text-white'>
+      토스페이스는 비바리퍼블리카가 제작한 이모지 폰트입니다. 한국적, 시대적 가치를 담은 이모지가 v1.3에 재배포됨을
+      기념하며 쉽게 복사할 수 있도록 이 사이트를 제작했습니다.
     </p>
-    <div className='mx-auto'>
-      <a className='mt-5 text-base font-medium tracking-tight text-slate-900 dark:text-white' href='yo'>
-        Yo
-      </a>
-      <div className='mt-2 text-sm text-slate-500 dark:text-slate-400'>This is a text</div>
-    </div>
+    <EmojiListItem
+      title='Tossface'
+      text='Tossface is an emoji library designed by a Korean Decacorn company Toss.'
+      emoji='🤖'
+      learnmore='https://toss.im/tossface/copyright'
+    />
     <Footer />
   </>
 )

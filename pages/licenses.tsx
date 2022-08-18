@@ -7,9 +7,9 @@ const licenses = () => {
     <>
       <h2 className='text-2xl font-semibold text-slate-900 dark:text-white'>Licenses</h2>
       <LicenseItem
-        title='Tossface Playground'
-        url='https://cho.sh/'
-        text='The Zero Gravity Pen can be used to write in any orientation, including upside-down. It even works in outer space.'
+        title='Tossface'
+        url='https://toss.im/tossface/copyright'
+        text='Tossface is an emoji library designed by a Korean Decacorn company Toss.'
       />
       <Footer />
     </>
