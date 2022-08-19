@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import React from 'react'
 
 const Footer = () => {
   return (
@@ -7,10 +6,11 @@ const Footer = () => {
       <span className='text-sm text-gray-500 sm:text-center dark:text-gray-400'>
         © 2022{' '}
         <a href='https://cho.sh/' className='hover:underline'>
-          Sunghyun Cho.
-        </a>{' '}
+          Sunghyun Cho
+        </a>
+        {' ❤️ '}
         <a href='https://github.com/anaclumos/tossface-playground' className='hover:underline'>
-          This project is open-sourced on GitHub.
+          Open Source
         </a>
       </span>
       <ul className='flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0'>
