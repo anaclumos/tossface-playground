@@ -4,9 +4,13 @@ import 'tailwindcss/tailwind.css'
 const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
-      <link rel='preconnect' href='https://cdn.jsdelivr.net' />
-      <link rel='preconnect' href='https://cdn.jsdelivr.net' crossOrigin='anonymous' />
-      <link href='https://cdn.jsdelivr.net/gh/toss/tossface/dist/tossface.css' rel='stylesheet' type='text/css' />
+      <link rel='preconnect' href='https://raw.githubusercontent.com' />
+      <link rel='preconnect' href='https://raw.githubusercontent.com' crossOrigin='anonymous' />
+      <link
+        href='https://raw.githubusercontent.com/toss/tossface/main/dist/tossface.css'
+        rel='stylesheet'
+        type='text/css'
+      />
       <link
         rel='stylesheet'
         as='style'
