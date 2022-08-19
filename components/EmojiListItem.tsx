@@ -8,11 +8,11 @@ const EmojiListItem = ({ name, info, unicode, link }: emoji) => {
         navigator.clipboard.writeText(unicode)
       }}
     >
-      <span
-        className='flex items-center p-2 m-2 transition-colors rounded-lg bg-slate-100 dark:bg-slate-800 active:bg-slate-200 dark:active:bg-slate-900'
-        style={{ fontFamily: 'Tossface' }}
-      >
-        <span className='pl-2 pr-6 text-6xl font-medium tracking-tight text-center text-slate-900 font-size-large min-w-48 dark:text-white max-w-16'>
+      <span className='flex items-center p-2 m-2 transition-colors rounded-lg bg-slate-100 dark:bg-slate-800 active:bg-slate-200 dark:active:bg-slate-900'>
+        <span
+          className='pl-2 pr-6 text-6xl font-medium tracking-tight text-center text-slate-900 font-size-large min-w-48 dark:text-white max-w-16'
+          style={{ fontFamily: 'Tossface' }}
+        >
           {unicode}
         </span>
         <div className='py-6 text-left'>
