@@ -12,7 +12,7 @@ const EmojiListItem = ({ unicode, name, info, link, fn }: Props) => {
       className='w-full min-h-24'
       onClick={() => {
         navigator.clipboard.writeText(unicode)
-        fn(`Copied ${name} ${unicode}!`)
+        fn(`Copied ${unicode} ${name}!`)
       }}
     >
       <span className='flex items-center h-full p-2 transition-colors rounded-lg bg-slate-100 dark:bg-slate-800 active:bg-slate-200 dark:active:bg-slate-900'>
@@ -27,7 +27,7 @@ const EmojiListItem = ({ unicode, name, info, link, fn }: Props) => {
             {'U+' + unicode.charCodeAt(0).toString(16).toUpperCase()}
           </code>
           <h3 className='text-lg font-medium text-slate-900 dark:text-white'>
-            <a className='hover:underline' href={link}>
+            <a className='hover:underline' href={link} target='_blank' rel='noopener noreferrer'>
               {name}
             </a>
           </h3>

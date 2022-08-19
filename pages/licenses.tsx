@@ -5,7 +5,11 @@ const licenses = () => {
   return (
     <>
       <h2 className='text-2xl font-semibold text-slate-900 dark:text-white'>Licenses and Attributions</h2>
-      <LicenseItem title='Tossface' url='https://toss.im/tossface/copyright' text='Open-sourced the Tossface Emoji.' />
+      <LicenseItem
+        title='Tossface'
+        url='https://toss.im/tossface/copyright'
+        text='Took the open-sourced Tossface emoji library to display the font.'
+      />
       <LicenseItem
         title='Emojipedia: Toss Face'
         url='https://emojipedia.org/toss-face/'
