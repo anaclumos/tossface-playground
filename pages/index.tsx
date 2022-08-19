@@ -5,7 +5,7 @@ import Footer from '../components/Footer'
 import { emoji } from '../emoji'
 import Notification from '../components/Notification'
 
-const index = () => {
+const Index = () => {
   const [isNotificationOpen, setIsNotificationOpen] = React.useState(true)
   return (
     <>
@@ -32,4 +32,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Index
