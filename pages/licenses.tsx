@@ -1,4 +1,3 @@
-import { Head } from 'next/document'
 import Footer from '../components/Footer'
 import LicenseItem from '../components/LicenseItem'
 
