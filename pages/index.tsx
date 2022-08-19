@@ -2,11 +2,18 @@ import React from 'react'
 import Head from 'next/head'
 import EmojiListItem from '../components/EmojiListItem'
 import Footer from '../components/Footer'
-import { emoji } from '../emoji'
+import { koreanEmoji, modernEmoji } from '../emoji'
 import Notification from '../components/Notification'
 
 const Index = () => {
-  const [isNotificationOpen, setIsNotificationOpen] = React.useState(true)
+  const [isNotificationOpen, setIsNotificationOpen] = React.useState(false)
+  const [notificationString, setNotificationString] = React.useState('Copied to clipboard.')
+
+  const showNotification = (string: string) => {
+    setNotificationString(string)
+    setIsNotificationOpen(true)
+  }
+
   return (
     <>
       <Head>
@@ -14,18 +21,26 @@ const Index = () => {
         <meta name='description' content='Tossface Playground' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <h1 className='text-2xl font-semibold text-slate-900 dark:text-white'>TossFace Emoji Playground!</h1>
-      <p className='py-6 text-base font-medium tracking-tight text-slate-900 dark:text-white'>
-        토스페이스는 비바리퍼블리카가 제작한 이모지 폰트입니다. 한국적, 시대적 가치를 담은 이모지가 v1.3에 재배포됨을
-        기념하며 쉽게 복사할 수 있도록 이 사이트를 제작했습니다.
-      </p>
-      {emoji.map(({ unicode, name, info, link }) => (
-        <EmojiListItem key={unicode} name={name} info={info} unicode={unicode} link={link} />
-      ))}
+      <h1 className='px-1 mt-6 mb-2 text-2xl font-semibold text-slate-900 dark:text-white'>
+        Tossface Emoji Playground
+      </h1>
+      <p className='px-1 text-base font-medium tracking-tight text-slate-900 dark:text-white'></p>
+      <h2 className='px-1 mt-6 mb-2 text-xl font-semibold text-slate-900 dark:text-white'>Korean 🇰🇷 Emojis</h2>
+      <div className='flex grid flex-wrap justify-center grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3'>
+        {koreanEmoji.map(({ unicode, name, info, link }) => (
+          <EmojiListItem key={unicode} name={name} info={info} unicode={unicode} link={link} fn={showNotification} />
+        ))}
+      </div>
+      <h2 className='px-1 mt-6 mb-2 text-xl font-semibold text-slate-900 dark:text-white'>Modern Emojis</h2>
+      <div className='flex grid flex-wrap justify-center grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3'>
+        {modernEmoji.map(({ unicode, name, info, link }) => (
+          <EmojiListItem key={unicode} name={name} info={info} unicode={unicode} link={link} fn={showNotification} />
+        ))}
+      </div>
       <div>
-        {isNotificationOpen && (
-          <Notification onClose={() => setIsNotificationOpen(false)}>Copied to clipboard!</Notification>
-        )}
+        <Notification open={isNotificationOpen} onClose={() => setIsNotificationOpen(false)}>
+          {notificationString}
+        </Notification>
       </div>
       <Footer />
     </>
