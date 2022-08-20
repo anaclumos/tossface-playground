@@ -30,6 +30,7 @@ const EmojiListItem = ({ unicode, name, info, link, fn }: Props) => {
             width={100}
             height={100}
             layout='fixed'
+            priority={true}
           />
         </span>
         <div className='py-6 pr-4 text-left'>
