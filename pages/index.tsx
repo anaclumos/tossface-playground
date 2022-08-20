@@ -19,7 +19,8 @@ const Index = () => {
       <Head>
         <title>Tossface</title>
         <meta name='description' content='Tossface' />
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='/uE109.svg' />
+        <link rel='mask-icon' href='/uE109.svg' />
       </Head>
       <h1 className='p-1 my-6 text-3xl font-bold text-slate-900 dark:text-white'>Tossface</h1>
       <p className='p-1 text-base font-medium tracking-tight text-slate-900 dark:text-white'>

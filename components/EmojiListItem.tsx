@@ -1,4 +1,4 @@
-import { svgMap } from '../font/svg'
+import { svgMap } from '../public/svg'
 import Image from 'next/image'
 
 type Props = {
