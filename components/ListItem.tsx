@@ -4,9 +4,9 @@ type Props = {
   text: string
 }
 
-const LicenseItem = ({ title, url, text }: Props) => {
+const ListItem = ({ title, url, text }: Props) => {
   return (
-    <div className='py-6 mx-auto'>
+    <div className='py-2 mx-auto'>
       <a
         className='mt-5 text-base font-medium tracking-tight text-slate-900 dark:text-white hover:underline'
         href={url}
@@ -18,4 +18,4 @@ const LicenseItem = ({ title, url, text }: Props) => {
   )
 }
 
-export default LicenseItem
+export default ListItem
