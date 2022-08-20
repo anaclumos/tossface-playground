@@ -17,8 +17,8 @@ const Index = () => {
   return (
     <>
       <Head>
-        <title>Tossface Playground</title>
-        <meta name='description' content='Tossface Playground' />
+        <title>Tossface</title>
+        <meta name='description' content='Tossface' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <h1 className='p-1 my-6 text-3xl font-bold text-slate-900 dark:text-white'>Tossface</h1>

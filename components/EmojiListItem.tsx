@@ -1,3 +1,6 @@
+import { svgMap } from '../font/svg'
+import Image from 'next/image'
+
 type Props = {
   unicode: string
   name: string
@@ -20,7 +23,14 @@ const EmojiListItem = ({ unicode, name, info, link, fn }: Props) => {
           className='pl-4 pr-6 text-6xl font-medium text-center text-slate-900 font-size-large min-w-48 dark:text-white max-w-16'
           style={{ fontFamily: 'Tossface' }}
         >
-          {unicode}
+          <Image
+            src={svgMap[unicode.charCodeAt(0).toString(16).toUpperCase()]}
+            className='w-full h-full'
+            alt={unicode}
+            width={100}
+            height={100}
+            layout='fixed'
+          />
         </span>
         <div className='py-6 pr-4 text-left'>
           <code className='text-base font-medium text-slate-500 dark:text-white'>
