@@ -20,11 +20,11 @@ const Notification = ({ open, children, onClose }: Props) => {
   // fade in/out animation
   React.useEffect(() => {
     if (isOpen && !open) {
-      document.querySelector('#notification-container')?.classList.add('translate-y-24')
+      document.querySelector('#notification-container')?.classList.add('translate-y-36')
       setIsOpen(false)
     }
     if (!isOpen && open) {
-      document.querySelector('#notification-container')?.classList.remove('translate-y-24')
+      document.querySelector('#notification-container')?.classList.remove('translate-y-36')
       setIsOpen(true)
     }
   }, [open, isOpen])
