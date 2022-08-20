@@ -37,10 +37,10 @@ const Notification = ({ open, children, onClose }: Props) => {
     >
       <div
         id='notification'
-        className='flex items-center w-full max-w-xs p-4 mx-auto mb-4 font-medium bg-white rounded-lg shadow bottom-8 dark:text-slate-400 dark:bg-slate-800 text-slate-900'
+        className='flex items-center w-full max-w-xs p-4 mx-auto mb-4 font-medium bg-white rounded-lg shadow bottom-8 dark:text-slate-200 dark:bg-slate-600 text-slate-900'
         role='alert'
       >
-        <div className='inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-green-500 bg-green-100 rounded-lg dark:bg-green-800 dark:text-green-200'>
+        <div className='inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-green-500 bg-green-100 rounded-lg dark:bg-green-600 dark:text-green-200'>
           <svg
             aria-hidden='true'
             className='w-5 h-5'
@@ -57,28 +57,6 @@ const Notification = ({ open, children, onClose }: Props) => {
           <span className='sr-only'>Check icon</span>
         </div>
         <div className='ml-3 text-lg font-normal'>{children}</div>
-        <button
-          type='button'
-          className='ml-auto -mx-1.5 -my-1.5 bg-white text-slate-400 hover:text-slate-900 rounded-lg focus:ring-2 focus:ring-slate-300 p-1.5 hover:bg-slate-100 inline-flex h-8 w-8 dark:text-slate-500 dark:hover:text-white dark:bg-slate-800 dark:hover:bg-slate-700 transition-background transition-colors'
-          data-dismiss-target='#notification-container'
-          aria-label='Close'
-          onClick={onClose}
-        >
-          <span className='sr-only'>Close</span>
-          <svg
-            aria-hidden='true'
-            className='w-5 h-5'
-            fill='currentColor'
-            viewBox='0 0 20 20'
-            xmlns='http://www.w3.org/2000/svg'
-          >
-            <path
-              fillRule='evenodd'
-              d='M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z'
-              clipRule='evenodd'
-            ></path>
-          </svg>
-        </button>
       </div>
     </div>
   )
