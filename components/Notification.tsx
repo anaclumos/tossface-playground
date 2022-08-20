@@ -37,7 +37,7 @@ const Notification = ({ open, children, onClose }: Props) => {
     >
       <div
         id='notification'
-        className='flex items-center w-full max-w-xs p-4 mx-auto mb-4 text-gray-500 bg-white rounded-lg shadow bottom-8 dark:text-gray-400 dark:bg-gray-800'
+        className='flex items-center w-full max-w-xs p-4 mx-auto mb-4 font-medium bg-white rounded-lg shadow bottom-8 dark:text-slate-400 dark:bg-slate-800 text-slate-900'
         role='alert'
       >
         <div className='inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-green-500 bg-green-100 rounded-lg dark:bg-green-800 dark:text-green-200'>
@@ -56,10 +56,10 @@ const Notification = ({ open, children, onClose }: Props) => {
           </svg>
           <span className='sr-only'>Check icon</span>
         </div>
-        <div className='ml-3 text-sm font-normal'>{children}</div>
+        <div className='ml-3 text-lg font-normal'>{children}</div>
         <button
           type='button'
-          className='ml-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700 transition-background transition-colors'
+          className='ml-auto -mx-1.5 -my-1.5 bg-white text-slate-400 hover:text-slate-900 rounded-lg focus:ring-2 focus:ring-slate-300 p-1.5 hover:bg-slate-100 inline-flex h-8 w-8 dark:text-slate-500 dark:hover:text-white dark:bg-slate-800 dark:hover:bg-slate-700 transition-background transition-colors'
           data-dismiss-target='#notification-container'
           aria-label='Close'
           onClick={onClose}

@@ -18,7 +18,7 @@ const EmojiListItem = ({ unicode, name, info, link, fn }: Props) => {
         fn(`Copied ${unicode} ${name}!`)
       }}
     >
-      <span className='flex items-center h-full p-2 transition-colors rounded-lg bg-slate-100 dark:bg-slate-800 active:bg-slate-200 dark:active:bg-slate-900'>
+      <span className='flex items-center h-full p-2 transition-colors rounded-lg bg-slate-100 dark:bg-slate-700 active:bg-slate-200 dark:active:bg-slate-800'>
         <span
           className='pl-4 pr-6 text-6xl font-medium text-center text-slate-900 font-size-large min-w-48 dark:text-white max-w-16'
           style={{ fontFamily: 'Tossface' }}
