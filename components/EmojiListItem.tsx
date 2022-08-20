@@ -22,7 +22,7 @@ const EmojiListItem = ({ unicode, name, info, link, fn }: Props) => {
         >
           {unicode}
         </span>
-        <div className='py-6 text-left'>
+        <div className='py-6 pr-4 text-left'>
           <code className='text-base font-medium text-slate-500 dark:text-white'>
             {'U+' + unicode.charCodeAt(0).toString(16).toUpperCase()}
           </code>

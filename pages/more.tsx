@@ -4,6 +4,7 @@ import LicenseItem from '../components/LicenseItem'
 const licenses = () => {
   return (
     <>
+      <h1 className='my-6 text-3xl font-bold text-slate-900 dark:text-white'>Thank you for using this project!</h1>
       <h2 className='text-2xl font-semibold text-slate-900 dark:text-white'>Licenses and Attributions</h2>
       <LicenseItem
         title='Tossface'
@@ -13,8 +14,9 @@ const licenses = () => {
       <LicenseItem
         title='Emojipedia: Toss Face'
         url='https://emojipedia.org/toss-face/'
-        text='Grabbed some introduction texts.'
+        text='Noted some introduction texts.'
       />
+      <LicenseItem title='Flowbite' url='https://flowbite.com/' text='Noted some Tailwind CSS designs.' />
       <Footer />
     </>
   )

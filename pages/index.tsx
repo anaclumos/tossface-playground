@@ -21,17 +21,24 @@ const Index = () => {
         <meta name='description' content='Tossface Playground' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <h1 className='px-1 mt-6 mb-2 text-2xl font-semibold text-slate-900 dark:text-white'>
-        Tossface Emoji Playground
-      </h1>
-      <p className='px-1 text-base font-medium tracking-tight text-slate-900 dark:text-white'></p>
-      <h2 className='px-1 mt-6 mb-2 text-xl font-semibold text-slate-900 dark:text-white'>Korean 🇰🇷 Emojis</h2>
+      <h1 className='p-1 my-6 text-3xl font-bold text-slate-900 dark:text-white'>Tossface</h1>
+      <p className='p-1 text-base font-medium tracking-tight text-slate-900 dark:text-white'>
+        Tossface is an emoji font face created by a Korean (almost) Decacorn company Viva Republica. Tossface initially
+        included a series of intentionally divergent emoji designs, replacing culturally-specific Japanese emojis with
+        designs representing related Korean concepts and outdated technologies with contemporary technologies.
+        Unfortunately, these replacements caused backlash from multiple stakeholders, and Viva Republica had to remove
+        the emojis. However, I have proposed returning the emojis using a standard technology known as Unicode Private
+        Area, and Viva Republica accepted the request a few days ago. I created this webpage to make it easy to copy
+        these uncharted emojis. It also functions as a visually appealing museum of Korean Culture.
+      </p>
+      <h2 className='p-1 py-2 mt-4 text-2xl font-semibold text-slate-900 dark:text-white'>Korean 🇰🇷 Emojis</h2>
+
       <div className='flex grid flex-wrap justify-center grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3'>
         {koreanEmoji.map(({ unicode, name, info, link }) => (
           <EmojiListItem key={unicode} name={name} info={info} unicode={unicode} link={link} fn={showNotification} />
         ))}
       </div>
-      <h2 className='px-1 mt-6 mb-2 text-xl font-semibold text-slate-900 dark:text-white'>Modern Emojis</h2>
+      <h2 className='p-1 py-2 mt-4 text-2xl font-semibold text-slate-900 dark:text-white'>Modern Emojis</h2>
       <div className='flex grid flex-wrap justify-center grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3'>
         {modernEmoji.map(({ unicode, name, info, link }) => (
           <EmojiListItem key={unicode} name={name} info={info} unicode={unicode} link={link} fn={showNotification} />
