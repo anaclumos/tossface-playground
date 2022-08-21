@@ -21,10 +21,12 @@ const Notification = ({ open, children, onClose }: Props) => {
   React.useEffect(() => {
     if (isOpen && !open) {
       document.querySelector('#notification-container')?.classList.add('translate-y-36')
+      document.querySelector('#notification-container')?.classList.add('opacity-0')
       setIsOpen(false)
     }
     if (!isOpen && open) {
       document.querySelector('#notification-container')?.classList.remove('translate-y-36')
+      document.querySelector('#notification-container')?.classList.remove('opacity-0')
       setIsOpen(true)
     }
   }, [open, isOpen])
@@ -32,7 +34,7 @@ const Notification = ({ open, children, onClose }: Props) => {
   return (
     <div
       id='notification-container'
-      className='fixed inset-0 bottom-0 flex items-center justify-center px-4 pb-4 mt-auto transition-transform duration-700 translate-y-36 h-fit transform-gpu'
+      className='fixed inset-0 bottom-0 flex items-center justify-center px-4 pb-4 mt-auto transition duration-700 translate-y-36 h-fit transform-gpu'
       style={{ zIndex: 1, fontFamily: 'Tossface, ui-san-serif, system-ui, Pretendard' }}
     >
       <div

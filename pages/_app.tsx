@@ -22,7 +22,7 @@ const App = ({ Component, pageProps }: AppProps) => {
         />
       </noscript>
       <div className='min-h-screen px-6 py-8 mx-auto bg-white shadow-xl dark:bg-slate-800 ring-1 ring-slate-900/5'>
-        <div className='max-w-screen-xl px-4 mx-auto sm:px-6 md:px-8'>
+        <div className='max-w-screen-xl mx-auto'>
           <Component {...pageProps} />
         </div>
       </div>
