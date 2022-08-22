@@ -13,4 +13,6 @@ https://github.com/toss/tossface
 
 * {
   font-feature-settings: 'rlig' 1, 'calt' 1, 'ss01' 1, 'ss06' 1;
+  word-wrap: break-word;
+  word-break: keep-all;
 }
