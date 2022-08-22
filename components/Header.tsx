@@ -17,12 +17,19 @@ const Header = () => {
           Open Source
         </a>
       </span>
-      <ul className='grid items-center grid-cols-2 gap-4 mt-3 text-sm text-gray-500 dark:text-gray-400 sm:text-center md:text-right'>
+      <ul className='grid items-center grid-cols-3 py-2 mt-3 text-sm text-right text-gray-500 dark:text-gray-400'>
         <li className='hover:underline'>
-          <Link href='/'>Home</Link>
+          <a href='https://toss.im/tossface'>Tossface</a>
         </li>
         <li className='hover:underline'>
-          <Link href='/more'>More</Link>
+          <Link href='/'>
+            <a>Home</a>
+          </Link>
+        </li>
+        <li className='hover:underline'>
+          <Link href='/more'>
+            <a>More</a>
+          </Link>
         </li>
       </ul>
     </nav>
