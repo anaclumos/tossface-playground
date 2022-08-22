@@ -19,7 +19,9 @@ const Header = () => {
       </span>
       <ul className='grid items-center grid-cols-3 py-2 mx-auto mt-3 text-sm text-center text-gray-500 lg:text-right dark:text-gray-400 sm:mx-0'>
         <li className='hover:underline'>
-          <a href='https://toss.im/tossface'>Tossface</a>
+          <a href='https://toss.im/tossface' target='_blank' rel='noopener noreferrer'>
+            Tossface
+          </a>
         </li>
         <li className='hover:underline'>
           <Link href='/'>
