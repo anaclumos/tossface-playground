@@ -10,3 +10,7 @@ https://github.com/toss/tossface
   font-display: swap;
   src: url('./TossFaceFontMac.ttf') format('truetype');
 }
+
+* {
+  font-feature-settings: 'rlig' 1, 'calt' 1, 'ss01' 1, 'ss06' 1;
+}
