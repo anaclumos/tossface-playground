@@ -25,9 +25,9 @@ const licenses = () => {
         <ListItem
           title='GitHub Repository'
           url='https://github.com/anaclumos/tossface-playground'
-          text='Completely Open-sourced on GitHub!'
+          text='Open-Sourced on GitHub!'
         />
-        <ListItem title='Blog Post' url='https://cho.sh/blog/92B47B' text='A postmortem of this project' />
+        <ListItem title='Blog Post' url='https://cho.sh/blog/92B47B' text='A Postmortem of This Project.' />
       </div>
 
       <h2 className='py-2 mt-4 text-2xl font-semibold text-slate-900 dark:text-white'>Licenses and Attributions</h2>
@@ -35,14 +35,14 @@ const licenses = () => {
         <ListItem
           title='Tossface'
           url='https://toss.im/tossface/copyright'
-          text='Took the open-sourced Tossface emoji library to display the font.'
+          text='Grabbed the Tossface Emoji Library to Display the Font.'
         />
         <ListItem
           title='Emojipedia: Toss Face'
           url='https://emojipedia.org/toss-face/'
-          text='Noted some introduction texts.'
+          text='Grabbed some Introduction Texts.'
         />
-        <ListItem title='Flowbite' url='https://flowbite.com/' text='Noted some Tailwind CSS designs.' />
+        <ListItem title='Flowbite' url='https://flowbite.com/' text='Grabbed some Tailwind CSS Designs.' />
       </div>
       <h2 className='py-2 mt-4 text-2xl font-semibold text-slate-900 dark:text-white'>Privacy</h2>
       <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3'>
