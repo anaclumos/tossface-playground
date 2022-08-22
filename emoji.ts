@@ -69,7 +69,7 @@ export const koreanEmoji: emoji[] = [
   {
     unicode: '\uE10A',
     name: 'Hanbok',
-    info: 'Hanbok is a set of traditional Korean clothes designed to facilitate ease of movement. Hanbok integrated many motifs of Mu-ism (Korean shamanism).Hanbok is not to be confused with Hanfu (Han Chinese).',
+    info: 'Hanbok is a set of traditional Korean clothes designed to facilitate ease of movement. Hanbok integrated many motifs of Mu-ism (Korean shamanism). Hanbok is not to be confused with Hanfu (Han Chinese).',
     link: 'https://en.wikipedia.org/wiki/Hanbok',
   },
   {
