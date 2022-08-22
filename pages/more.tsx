@@ -48,7 +48,7 @@ const licenses = () => {
       <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3'>
         <ListItem
           title='Simple Analytics'
-          url='https://simpleanalytics.com/'
+          url='https://simpleanalytics.com/tossface.cho.sh'
           text='Tracking user origin and source of visit without collecting any personal information.'
         />
       </div>
